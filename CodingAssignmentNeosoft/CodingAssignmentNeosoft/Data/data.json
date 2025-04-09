@@ -1,0 +1,33 @@
+[
+  {
+    "imageName": "fruits",
+    "data": [
+      { "title": "Apple", "subtitle": "Apple fruit", "imageName": "apple" },
+      { "title": "Banana", "subtitle": "Banana fruit", "imageName": "banana" },
+      { "title": "Orange", "subtitle": "Orange fruit", "imageName": "oranges" },
+      { "title": "Blueberry", "subtitle": "Berry fruit", "imageName": "blueberry" },
+      { "title": "Mango", "subtitle": "Mango fruit", "imageName": "mango" },
+      { "title": "Grapes", "subtitle": "Grapes fruit", "imageName": "grapes" }
+    ]
+  },
+  {
+    "imageName": "animals",
+    "data": [
+      { "title": "Elephant", "subtitle": "Elephant animal", "imageName": "elephant" },
+      { "title": "Tiger", "subtitle": "Tiger animal", "imageName": "tiger" },
+      { "title": "Cat", "subtitle": "Cat animal", "imageName": "cat" },
+      { "title": "Bear", "subtitle": "Bear animal", "imageName": "bear" }
+    ]
+  },
+  {
+    "imageName": "birds",
+    "data": [
+      { "title": "Parrot", "subtitle": "Parrot bird", "imageName": "parrot" },
+      { "title": "Sparrow", "subtitle": "Sparrow bird", "imageName": "sparrow" },
+      { "title": "Crow", "subtitle": "Crow bird", "imageName": "crow" },
+      { "title": "Finch", "subtitle": "Finch bird", "imageName": "finch" },
+      { "title": "Duck", "subtitle": "Duck bird", "imageName": "duck" }
+    ]
+  }
+]
+

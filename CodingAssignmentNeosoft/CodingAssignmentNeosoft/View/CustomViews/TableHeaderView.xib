@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableHeaderView" customModule="CodingAssignmentNeosoft" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TableHeaderView" customModule="CodingAssignmentNeosoft" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="330"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNX-7V-DFG">
+                    <rect key="frame" x="10" y="10" width="302" height="300"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="g21-SR-1C2" customClass="carouselCollectionView">
+                            <rect key="frame" x="0.0" y="0.0" width="302" height="200"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="F3a-ZB-mhQ"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="fOj-SQ-gVZ">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfz-GV-tDh">
+                            <rect key="frame" x="10" y="245" width="282" height="60"/>
+                            <subviews>
+                                <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="Lan-tG-x06">
+                                    <rect key="frame" x="0.0" y="2" width="282" height="56"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Lan-tG-x06" secondAttribute="trailing" id="Mzb-zO-cNc"/>
+                                <constraint firstAttribute="height" constant="60" id="d7x-zA-yEf"/>
+                                <constraint firstItem="Lan-tG-x06" firstAttribute="leading" secondItem="xfz-GV-tDh" secondAttribute="leading" id="wdt-TJ-7K3"/>
+                                <constraint firstItem="Lan-tG-x06" firstAttribute="centerY" secondItem="xfz-GV-tDh" secondAttribute="centerY" id="y4m-ma-3WL"/>
+                            </constraints>
+                        </view>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="8B4-kK-5Fv">
+                            <rect key="frame" x="114.66666666666669" y="210" width="73" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="XoC-kv-KWc"/>
+                            </constraints>
+                        </pageControl>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="g21-SR-1C2" firstAttribute="leading" secondItem="GNX-7V-DFG" secondAttribute="leading" id="2A0-1Y-hdK"/>
+                        <constraint firstItem="xfz-GV-tDh" firstAttribute="top" secondItem="8B4-kK-5Fv" secondAttribute="bottom" constant="10" id="5Ei-Xn-UII"/>
+                        <constraint firstItem="8B4-kK-5Fv" firstAttribute="top" secondItem="g21-SR-1C2" secondAttribute="bottom" constant="10" id="Bcf-wb-n34"/>
+                        <constraint firstItem="xfz-GV-tDh" firstAttribute="leading" secondItem="GNX-7V-DFG" secondAttribute="leading" constant="10" id="Lf6-5S-jeN"/>
+                        <constraint firstAttribute="trailing" secondItem="g21-SR-1C2" secondAttribute="trailing" id="N6U-uM-Yfj"/>
+                        <constraint firstItem="8B4-kK-5Fv" firstAttribute="centerX" secondItem="GNX-7V-DFG" secondAttribute="centerX" id="fNi-eO-HJ0"/>
+                        <constraint firstAttribute="height" constant="300" id="lGg-Xf-cdW"/>
+                        <constraint firstAttribute="trailing" secondItem="xfz-GV-tDh" secondAttribute="trailing" constant="10" id="tF5-J4-6h9"/>
+                        <constraint firstItem="g21-SR-1C2" firstAttribute="top" secondItem="GNX-7V-DFG" secondAttribute="top" id="zhm-WW-3l3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="GNX-7V-DFG" secondAttribute="trailing" constant="10" id="5zL-BT-Ucr"/>
+                <constraint firstItem="GNX-7V-DFG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="X1b-n4-N28"/>
+                <constraint firstItem="GNX-7V-DFG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="aQl-3c-2N2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="carouselCollectionView" destination="g21-SR-1C2" id="bew-Ra-eCK"/>
+                <outlet property="imagesPageControl" destination="8B4-kK-5Fv" id="HgS-yt-oGE"/>
+                <outlet property="searchBar" destination="Lan-tG-x06" id="7Ac-Si-wpK"/>
+            </connections>
+            <point key="canvasLocation" x="65.648854961832058" y="-164.08450704225353"/>
+        </view>
+    </objects>
+</document>
